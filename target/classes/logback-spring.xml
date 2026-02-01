@@ -1,0 +1,15 @@
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+
+    <springProperty scope="context" name="LOG_LEVEL_PATTERN" source="logging.level.pattern"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
