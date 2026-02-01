@@ -3,7 +3,7 @@
 Overview
 
 This repository contains a Java backend for a restaurant management system. It provides APIs for bookings, dishes, employees, feedback, reporting, reservations, and related services. The codebase is organized following a typical Maven/Gradle Java project layout under `main/java/com/restaurantback`.
-# Restaurant Back (Backend)
+# Order Backend (Backend)
 
 Overview
 
@@ -68,11 +68,3 @@ Developer notes
 - Treat top-level classes in `com.restaurantback` as Lambda handlers rather than a single `main` entrypoint.
 - Use an IDE to navigate DTOs and handlers; the primary business logic lives in `services/` and is suitable for unit testing.
 
-Contributing
-
-- Fork and create feature branches.
-- Add tests for new functionality.
-- Use descriptive commit messages and open pull requests with a summary of changes.
-
-Next steps
-- I can expand this README with deployment examples for AWS SAM/Serverless Framework, add example `template.yaml` or `serverless.yml`, or generate per-handler documentation. Which would you like?
